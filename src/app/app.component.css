@@ -1,0 +1,6 @@
+.wallpaper-page{
+    width: 100%;
+    height: 400px;
+    background-image: url('/assets/images/wallpaper.jpg'); 
+    background-size: cover;    
+}

@@ -1,0 +1,13 @@
+<div class="card m-2" style="width: 18rem; margin: auto;">
+  <img class="card-img-top" *ngIf="movie.backdrop_path === null"
+    src="https://supremeauto.com/uploads/image-not-available.png" height=160 alt="Card image cap" />
+  <img class="card-img-top" *ngIf="movie.backdrop_path !== null"
+    src="https://image.tmdb.org/t/p/w500{{movie.backdrop_path}}" alt="Card image cap" />
+  <div class="card-body">
+    <h5 class="card-title">{{movie.title}}</h5>
+    <p class="card-text">
+      {{movie.overview}}
+    </p>
+  </div>
+  <a class="btn btn-success btn-block text-light" (click)="emitToMyFather()">+ INFO</a>
+</div>

@@ -1,0 +1,12 @@
+a {
+    cursor: pointer;
+}
+
+.card-text{
+    height: 200px;
+    overflow: auto ;
+}
+
+.card{
+    height: 500px;  
+}
